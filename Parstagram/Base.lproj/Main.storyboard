@@ -35,28 +35,24 @@
         <!--Camera View Controller-->
         <scene sceneID="25q-Ol-RXA">
             <objects>
-                <viewController id="f1v-6h-YFT" customClass="CameraViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="f1v-6h-YFT" customClass="CameraViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ctk-bm-bKT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="BZb-Mz-UzL">
-                                <rect key="frame" x="20" y="20" width="374" height="298"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="BZb-Mz-UzL">
+                                <rect key="frame" x="20" y="44" width="374" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES" allowsDirectInteraction="YES"/>
+                                </accessibility>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="vDl-Uo-e3u" appends="YES" id="taN-Qp-ahN"/>
-                                    <outletCollection property="gestureRecognizers" destination="vDl-Uo-e3u" appends="YES" id="Lhu-h2-Amp"/>
                                 </connections>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhK-CY-4aI">
-                                <rect key="frame" x="20" y="326" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iW-BN-3Q5">
-                                <rect key="frame" x="19" y="368" width="375" height="31"/>
+                                <rect key="frame" x="19" y="424" width="375" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Submit"/>
@@ -64,6 +60,12 @@
                                     <action selector="onSubmit:" destination="f1v-6h-YFT" eventType="touchUpInside" id="889-Rz-A5N"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhK-CY-4aI">
+                                <rect key="frame" x="19" y="350" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gg2-jA-95S"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -76,7 +78,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKS-sK-n0R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="vDl-Uo-e3u">
                     <connections>
-                        <action selector="onCamera:" destination="f1v-6h-YFT" id="UmU-xg-J9w"/>
+                        <action selector="onCamera:" destination="f1v-6h-YFT" id="ysn-Zj-66r"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
