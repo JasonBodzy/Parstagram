@@ -68,6 +68,11 @@
                                                 <constraint firstItem="HGc-yk-sfd" firstAttribute="leading" secondItem="6dL-Yy-NKD" secondAttribute="leading" constant="8" id="xzy-Hb-28Q"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="ug0-zL-u8C" id="tqi-RE-uMo"/>
+                                            <outlet property="photoView" destination="HGc-yk-sfd" id="hh5-BG-fHl"/>
+                                            <outlet property="usernameLabel" destination="4s2-nL-pK8" id="ckW-wl-O0A"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
