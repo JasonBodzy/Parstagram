@@ -82,6 +82,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Rlj-a1-n9O">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="m0W-CH-fpl">
+                            <connections>
+                                <action selector="onLogout:" destination="jFZ-Fi-c4b" id="YLM-uU-Zaf"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="xJ0-BJ-wqY">
                             <connections>
                                 <segue destination="f1v-6h-YFT" kind="presentation" id="ajK-HK-kBT"/>
@@ -152,7 +157,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,12 +260,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381" y="274"/>
+            <point key="canvasLocation" x="383" y="258"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wqv-gI-Aed">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="41w-Sv-quP" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="41w-Sv-quP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q4m-CW-t0m">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
