@@ -74,6 +74,40 @@
                                             <outlet property="usernameLabel" destination="4s2-nL-pK8" id="ckW-wl-O0A"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="uKQ-9R-bUz" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="490.5" width="414" height="37.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uKQ-9R-bUz" id="E6z-cO-CVu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fk6-L1-gAN">
+                                                    <rect key="frame" x="16" y="8" width="44.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is thou commend" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XU-In-aqP">
+                                                    <rect key="frame" x="100" y="8" width="306" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9XU-In-aqP" secondAttribute="bottom" constant="8" id="02V-gl-H9t"/>
+                                                <constraint firstItem="9XU-In-aqP" firstAttribute="top" secondItem="E6z-cO-CVu" secondAttribute="top" constant="8" id="358-hH-3yD"/>
+                                                <constraint firstItem="Fk6-L1-gAN" firstAttribute="leading" secondItem="E6z-cO-CVu" secondAttribute="leading" constant="16" id="4GF-G1-RbV"/>
+                                                <constraint firstAttribute="trailing" secondItem="9XU-In-aqP" secondAttribute="trailing" constant="8" id="Sze-i7-wg1"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Fk6-L1-gAN" secondAttribute="bottom" constant="8" id="XDJ-i0-kQ8"/>
+                                                <constraint firstItem="Fk6-L1-gAN" firstAttribute="top" secondItem="E6z-cO-CVu" secondAttribute="top" constant="8" id="YG8-xr-OYS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="9XU-In-aqP" id="ZdB-Rm-DMP"/>
+                                            <outlet property="nameLabel" destination="Fk6-L1-gAN" id="UZc-uB-wod"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
